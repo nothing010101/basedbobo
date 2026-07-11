@@ -4170,7 +4170,8 @@ textarea.w-select {
       <g id="bobo-arrow">
         <line x1="60" y1="150" x2="220" y2="150" stroke="#22c55e" stroke-width="6" stroke-linecap="round"></line>
         <polygon points="220,150 200,138 200,162" fill="#16a34a"></polygon>
-        <polygon points="60,150 78,138 78,162" fill="#4ade80"></polygon>
+        <line x1="60" y1="150" x2="80" y2="136" stroke="#4ade80" stroke-width="4" stroke-linecap="round"></line>
+        <line x1="60" y1="150" x2="80" y2="164" stroke="#4ade80" stroke-width="4" stroke-linecap="round"></line>
         <animateTransform attributeName="transform" attributeType="XML" type="translate"
           keyTimes="0;0.35;0.45;1"
           values="0,0;-70,0;700,0;700,0"
@@ -4562,10 +4563,4 @@ textarea.w-select {
         3955: function(t) {
             t.exports = function(t, e) {
                 for (var n = -1, r = null == t ? 0 : t.length; ++n < r; )
-                    if (e(t[n], n, t))
-                        return !0;
-                return !1
-            }
-        },
-        609: function(t, e, n) {
-            var r = n
+                    if (e(
